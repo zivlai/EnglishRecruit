@@ -120,6 +120,83 @@ h6 {
   }
 }
 
+.btn-link-inner {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  /* background: lightblue; */
+  color: #fff;
+  /* color: black; */
+}
+.btn-link-inner:hover {
+  color: #fff;
+  background: #3eccf3;
+}
+
+.btn-link-outer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  /* color: black; */
+  background: #3fcdc7;
+  /* background: lightblue; */  
+}
+.btn-link-outer:hover {
+  color: #fff;
+  background: #72dfd9;
+  /* background: #77e7e2; */
+  /* background: #02afa7; */
+}
+
+.div-btn-link-inner {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0px 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #6fc4db;
+  color: #fff;
+}
+.div-btn-link-inner:hover {
+  color: #fff;
+  background: #7fd5ec;
+}
+
+.div-btn-link-outer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 0px 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #59d1cb;
+  color: #fff;
+}
+.div-btn-link-outer:hover {
+  color: #fff;
+  background: #6de4de;
+}
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -503,7 +580,7 @@ h6 {
   padding: 80px 0;
 }
 
-#secHost .btn-link {
+/* #secHost .btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -514,10 +591,8 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #1bb1dc;
-  /* background: lightblue; */
   color: #fff;
-  /* color: black; */
-}
+} */
 
 #secHost .secHost-content {
   padding-top: 40px;
@@ -599,7 +674,7 @@ h6 {
   padding: 60px 0 40px 0;
 }
 
-#secReq .btn-link {
+/* #secReq .div-btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -609,12 +684,9 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  /* background: #1bb1dc; */
-  /* background: #3fcdc7; */
   background: #6fc4db;
   color: #fff;
-  /* color: black; */
-}
+} */
 
 #secReq .box {
   padding: 30px;
@@ -729,11 +801,10 @@ h6 {
   text-align: center;
 }
 
-#secSection .btn-link {
+/* #secSection .btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
@@ -742,7 +813,7 @@ h6 {
   color: #fff;
   background: #1bb1dc;
   color: #fff;
-}
+} */
 
 /* Why Us Section
 --------------------------------*/
@@ -847,7 +918,7 @@ h6 {
   padding: 10px 0;
 }
 
-#secSpecial .btn-link {
+/* #secSpecial .btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -858,10 +929,8 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #1bb1dc;
-  /* background: lightblue; */
   color: #fff;
-  /* color: black; */
-}
+} */
 
 #secSpecial h2 {
   color: #413e66;
@@ -901,7 +970,7 @@ h6 {
   padding: 10px 0;
 }
 
-#secMore .btn-link {
+/* #secMore .btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -912,10 +981,8 @@ h6 {
   transition: 0.5s;
   color: #fff;
   background: #1bb1dc;
-  /* background: lightblue; */
   color: #fff;
-  /* color: black; */
-}
+} */
 
 #secMore h2 {
   color: #413e66;
@@ -934,7 +1001,7 @@ h6 {
 
 
 #secMore .container ul {
-  list-style: none;
+  /* list-style: none; */
   padding: 0;
 }
 
@@ -1424,11 +1491,10 @@ h6 {
   content: "\f2c7" !important;
 }
 
-#faq .btn-link {
+/* #faq .btn-link-inner {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
   display: inline-block;
   padding: 3px 5px;
@@ -1437,7 +1503,7 @@ h6 {
   color: #fff;
   background: #1bb1dc;
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Footer
