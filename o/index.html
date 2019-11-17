@@ -64,17 +64,17 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#secReq">Basic requirements</a></li>
+          <li><a href="#secReq">Requirements</a></li>
           <li><a href="#secGathering">Gathering</a></li>
           <li><a href="#secSection">Sections</a></li>
           <li><a href="#secHost">Host</a></li>
-          <li><a href="#secSpecial">Special Section</a></li>
+          <li><a href="#secSpecial">Special</a></li>
+          <li><a href="#secRecruit">Recruit</a></li>
           <li class="drop-down"><a href="#secMore">More</a>
             <ul>
               <li><a href="#divAttend">Attend sheet</a></li>
-              <li><a href="#divRecruit">Recruitment</a></li>
-              <li><a href="#divChange">Make a change</a></li>              
               <li><a href="#divTasks">Background tasks</a></li>
+              <li><a href="#divChange">Make a change</a></li>              
               <!-- <li class="drop-down"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -89,8 +89,8 @@
               <li><a href="#">Drop Down 5</a></li> -->
             </ul>
           </li>
-          <li><a href="#secAck">Confirm</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#secAck">Confirm</a></li>          
         </ul>
       </nav><!-- .main-nav -->
       
@@ -170,9 +170,9 @@
             <div class="box">
               <div class="icon" style="background: #e6fdfc;"><i class="ion-android-textsms" style="color: #3fcdc7;"></i></div>              
               <h4 class="title"><a href="">Notify your absence</a></h4>
-              <p class="description">By sending line messages with a specific time. <a onclick="if (!$('#faqNotifyAbsence').hasClass('collapse show')) {$('#faqNotifyAbsenceTitle').click()}" href="#faqNotifyAbsenceTitle" class="div-btn-link-inner scrollto">Why</a></p>
+              <p class="description">Send line messages with a specific time. <a onclick="if (!$('#faqNotifyAbsence').hasClass('collapse show')) {$('#faqNotifyAbsenceTitle').click()}" href="#faqNotifyAbsenceTitle" class="div-btn-link-inner scrollto">Why</a> <a onclick="if (!$('#faqAbsentLong').hasClass('collapse show')) {$('#faqAbsentLongTitle').click()}" href="#faqAbsentLongTitle" class="div-btn-link-inner scrollto">Long Absence</a></p>
               <p class="description">Preferred time: Before Saturday 10PM.</p>
-              <p class="description">Optional: Mark your absence [-] on <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="div-btn-link-outer scrollto">Attend sheet</a></p>
+              <p class="description">Optional: Mark your absence on <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="div-btn-link-outer scrollto">Attend sheet</a> <a href="#divAttend" class="div-btn-link-inner scrollto">How</a></p>
             </div>
           </div>
 
@@ -351,51 +351,125 @@
       </div>
 
     </section>
-
+    
     <!--==========================
       Features Section
     ============================-->
     <section id="secSpecial">
-        <div class="container">
+      <div class="container">
+        <div id="divSpecial" class="row feature-item">
+        <!-- <div class="row feature-item mt-5 pt-5"> -->
+          <!-- <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0"> -->
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <!-- <img src="img/features-1.svg" class="img-fluid" alt=""> -->
+            <img src="img/special.jpg" class="img-fluid" alt="">
+          </div>
 
-          <div id="divSpecial" class="row feature-item">
-          <!-- <div class="row feature-item mt-5 pt-5"> -->
-            <!-- <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0"> -->
-            <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-              <!-- <img src="img/features-1.svg" class="img-fluid" alt=""> -->
-              <img src="img/special.jpg" class="img-fluid" alt="">
-            </div>
-  
-            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-              <h2>(※2) Special section</h2>
-              <p> Every member can share any news, article, or activity that he or she is interested in and suggest to discuss on gatherings by <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=1355518207" target="_blank" class="btn-link-outer scrollto">Special section</a>.<br>                
-              </p>
-              <!-- <ul> 
-                <li><i class="ion-android-checkmark-circle"></i>Proposer: any member</li>
-                <li><i class="ion-android-checkmark-circle"></i>Process:</li>
-              </ul>               -->
-              <ul class="fa-ul">                
-                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Proposer: Any member</li>
-                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Process:</li>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-angle-double-right"></i></span> Proposer: Post your name and the news/articles/activities or any information on the “topic” of the special section sheet. You can also post the question you want to discuss.</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-double-right"></i></span> Host can select any special section topic and arrange time schedule. Host sings your name on the “Select” and assigns your host date on “Date Assign” of the special section sheet.</li>
-                </ul>
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h2>(※2) Special section</h2>
+            <p> Every member can share any news, article, or activity that he or she is interested in and suggest to discuss on gatherings by <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=1355518207" target="_blank" class="btn-link-outer scrollto">Special section</a>.<br>                
+            </p>
+            <!-- <ul> 
+              <li><i class="ion-android-checkmark-circle"></i>Proposer: any member</li>
+              <li><i class="ion-android-checkmark-circle"></i>Process:</li>
+            </ul>               -->
+            <ul class="fa-ul">                
+              <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Proposer: Any member</li>
+              <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Process:</li>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-angle-double-right"></i></span> Proposer: Post your name and the news/articles/activities or any information on the “topic” of the special section sheet. You can also post the question you want to discuss.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-double-right"></i></span> Host can select any special section topic and arrange time schedule. Host sings your name on the “Select” and assigns your host date on “Date Assign” of the special section sheet.</li>
               </ul>
-              <!-- <p>
-               Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
-              </p>
-              <p>
-                Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-              </p>
-              <p>
-                Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-              </p> -->
-            </div>
-            
-          </div>          
+            </ul>
+            <!-- <p>
+             Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
+            </p>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+            </p> -->
+          </div>
+          
+        </div>          
+      </div>
+    </section>
+
+
+    <!--==========================
+      Recruit Section
+    ============================-->
+
+    <section id="secRecruit">
+      <div class="container">
+        <!-- <div class="row feature-item"> -->
+        <div  id="divRecruit" class="row feature-item mt-5 pt-5">
+          <!-- <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0"> -->
+          <div class="col-lg-6 wow fadeInUp">
+            <!-- <img src="img/features-1.svg" class="img-fluid" alt=""> -->
+            <img src="img/recruit.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h2>Recruitment</h2>
+            <p>
+              Every member who has been a host can be a voter for recruitment.<br>
+              Voters should consider if the applicant is good to here on voting.
+            </p>
+            <p>
+              <ul class="fa-ul">                
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Recruiters should check the recruitment Google Form every week.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If any, recruiters will call for a vote and set a deadline.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Vote with marks: [○] <b>Approval</b> / [x] <b>Disapproval</b> / [-] <b>No opinion</b>.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> The decision will be calculated automatically if ≧ 3 voters voted.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> After the deadline, the decision will be made if no further opinion.</li>
+              </ul>
+            </p> 
+            <p>
+              If the result is approval, recruiters will invite the applicant to attend and be our guest. Here are some routine procedures:
+            </p>
+            <p>
+              <ul class="fa-ul">                
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Do self-introduction. Members can do a simple self-introduction.</li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Introduce our <a href="#secReq" class="btn-link-inner scrollto">Basic requirements</a> / <a href="#secGathering" class="btn-link-inner scrollto">Gathering</a> / <a href="#secSection" class="btn-link-inner scrollto">Sections</a>.</li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Let our guest think and decide whether to join or not. <a onclick="if (!$('#faqRecruitPush').hasClass('collapse show')) {$('#faqRecruitPushTitle').click()}" href="#faqRecruitPushTitle" class="btn-link-inner scrollto">More</a></li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> The guest can attend more times to have a clear mind to join.</li>
+              </ul>
+            </p> 
+            <!-- <p>
+              From a long term point of view, instead of having lots of members joined, it's more important after several weeks how many members still stay with us and attend regularly. Therefore we don't need to persuade or push guests to join. Instead, make our requirements clear, and let guests think thoroughly and decide by themselves.
+            </p>               -->
+          </div>            
+        </div>      
+      </div>
+    </section>
+
+
+    <!--==========================
+      Realization Section
+    ============================-->
+    <section id="secAck" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Finish of Orientation</h3>
+            <p class="cta-text"> 
+              You've finished our Basic Orientation. Now click the Confirm button, to let us know <a href="https://docs.google.com/spreadsheets/d/1nC1CXjtlOJ7WzDzJLufgSFKmFQcMm2sNO_5mKME2O_c/edit?usp=sharing" target="_blank" class="btn-link-outer scrollto">Your opinions</a> if you have.<br>
+              You can keep <a href="#secMore" class="div-btn-link-inner scrollto">Going down</a> to finish our Detailed Orientation then go back here to click the Confirm button, and choose to share our <a href="#divTasks" class="div-btn-link-inner scrollto">Background tasks</a> if you'd like.              
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc3fEaoZvszWSU7VrqcfIK7zXPOn0kdSIbRTdKCUlKDC7aHJA/viewform?usp=pp_url">Confirm</a>
+          </div>
         </div>
-      </section>
+
+      </div>
+    </section>
+
+
+    <!--==========================
+      More Section
+    ============================-->
 
     <section id="secMore">
         <div class="container">
@@ -431,85 +505,6 @@
               </p>              
             </div>
           </div>
-  
-
-          <!-- <div class="row feature-item"> -->
-          <div  id="divRecruit" class="row feature-item mt-5 pt-5">
-            <!-- <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0"> -->
-            <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-              <!-- <img src="img/features-1.svg" class="img-fluid" alt=""> -->
-              <img src="img/recruit.jpg" class="img-fluid" alt="">
-            </div>
-  
-            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-              <h2>Recruitment</h2>
-              <p>
-                (※3) Every member who has been a host can be a voter for recruitment.<br>
-                Voters should consider if the applicant is good to here on voting.
-              </p>
-              <p>
-                <ul class="fa-ul">                
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Recruiters should check the recruitment Google Form every week.</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If any, recruiters will call for a vote and set a deadline.</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Vote with marks: [○] <b>Approval</b> / [x] <b>Disapproval</b> / [-] <b>No opinion</b>.</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> The decision will be calculated automatically if ≧ 3 voters voted.</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> After the deadline, the decision will be made if no further opinion.</li>
-                </ul>
-              </p> 
-
-              <p>
-                If the result is approval, recruiters will invite the applicant to attend and be our guest. Here are some routine procedures:
-              </p>
-              <p>
-                <ul class="fa-ul">                
-                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Do self-introduction. Members can do a simple self-introduction.</li>
-                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Introduce our <a href="#secReq" class="btn-link-inner scrollto">Basic requirements</a> / <a href="#secGathering" class="btn-link-inner scrollto">Gathering</a> / <a href="#secSection" class="btn-link-inner scrollto">Sections</a>.</li>
-                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Let our guest think and decide whether to join or not. <a onclick="if (!$('#faqRecruitPush').hasClass('collapse show')) {$('#faqRecruitPushTitle').click()}" href="#faqRecruitPushTitle" class="btn-link-inner scrollto">More</a></li>
-                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> The guest can attend more times to have a clear mind to join.</li>
-                </ul>
-              </p> 
-              <!-- <p>
-                From a long term point of view, instead of having lots of members joined, it's more important after several weeks how many members still stay with us and attend regularly. Therefore we don't need to persuade or push guests to join. Instead, make our requirements clear, and let guests think thoroughly and decide by themselves.
-              </p>               -->
-
-            </div>            
-          </div>      
-
-          <!-- <div class="row feature-item"> -->
-            <div id="divChange" class="row feature-item mt-5 pt-5">
-              <div class="col-lg-6 wow fadeInUp">
-                <!-- <img src="img/features-2.svg" class="img-fluid" alt=""> -->                
-                <img src="img/change.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                <h2>Make a change</h2>
-                <p>
-                  Every change should be a plus to here, but it's hard to define what's good.
-                  Here are some common factors considered to be good to here:
-                </p>
-                <p>
-                  <ul class="fa-ul">                
-                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Enhance members' willingness to participate.</li>
-                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Persuade members to put more efforts on English learning.</li>
-                  </ul>
-                </p>
-                <p>
-                  For example, asking members to prepare a lot will certainy be good on our English learning, but it will also make our members become reluctant to come, which is hard to be considered as a plus to here.<br><br>
-                  If you come up with a good idea, it's recommended to refer to how the present mechanisms are made to initiate:
-                </p>
-                <p>
-                  <ul class="fa-ul">                
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Make a motion.</li>
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Introduce and discuss on the gathering.</li>
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Listen to opinions and past experience if any.</li>
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Have a vote to initiate.</li>
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Run experiments week after week.</li>
-                    <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Review, discuss, adjust, and make a final decision.</li>
-                  </ul>
-                </p>
-
-              </div>
-            </div>
 
           <!-- <div class="row feature-item"> -->
           <div  id="divTasks" class="row feature-item mt-5 pt-5">
@@ -529,13 +524,48 @@
                   <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Maintain attend sheet</li>
                   <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Assign hosts</li>
                   <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Assist hosts</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Introduce to applicants or guests: (※4) All members</li>
-                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Orientate new members: (※5) All members</li>                  
+                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Introduce to applicants or guests: (※3) All members</li>
+                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Orientate new members: (※4) All members</li>                  
                   <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Recruit and refresh <a onclick="if (!$('#faqAbsentQuit').hasClass('collapse show')) {$('#faqAbsentQuitTitle').click()}" href="#faqAbsentQuitTitle" class="btn-link-inner scrollto">More</a></li>         
                 </ul>
               </p>
             </div>            
           </div>      
+
+          <!-- <div class="row feature-item"> -->
+          <div id="divChange" class="row feature-item mt-5 pt-5">
+            <div class="col-lg-6 wow fadeInUp">
+              <!-- <img src="img/features-2.svg" class="img-fluid" alt=""> -->                
+              <img src="img/change.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+              <h2>Make a change</h2>
+              <p>
+                Every change should be a plus to here, but it's hard to define what's good.
+                Here are some common factors considered to be good to here:
+              </p>
+              <p>
+                <ul class="fa-ul">                
+                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Enhance members' willingness to participate.</li>
+                  <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Persuade members to put more efforts on English learning.</li>
+                </ul>
+              </p>
+              <p>
+                For example, asking members to prepare a lot will certainy be good on our English learning, but it will also make our members become reluctant to come, which is hard to be considered as a plus to here.<br><br>
+                If you come up with a good idea, it's recommended to refer to how the present mechanisms are made to initiate:
+              </p>
+              <p>
+                <ul class="fa-ul">                
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Make a motion.</li>
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Introduce and discuss on the gathering.</li>
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Listen to opinions and past experience if any.</li>
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Have a vote to initiate.</li>
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Run experiments week after week.</li>
+                  <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Review, discuss, adjust, and make a final decision.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
 
         </div>
       </section>
@@ -948,25 +978,6 @@
     </section> -->
 
     <!--==========================
-      Realization Section
-    ============================-->
-    <section id="secAck" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Realization</h3>
-            <p class="cta-text"> Did you understand how our study works? Do you have any question or suggestion?<br>
-              We would like to know <a href="https://docs.google.com/spreadsheets/d/1w-i_BJ_nQ9tNFdtYZPn6J-v0nqUcKJRWShS-vycB3Ek/edit?usp=sharing" target="_blank" class="btn-link-outer scrollto">Your opinions</a>, please tell us by clicking the Confirm button after you read!</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeA09RZ1H1iQriIu1vINYZrsXH-oUP1_oBRXFZWVD79FWK3nw/viewform?usp=pp_url">Confirm</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!--==========================
       Frequently Asked Questions Section
     ============================-->
     <section id="faq">
@@ -1007,8 +1018,9 @@
             <div id="faqHostActivity" class="collapse" data-parent="#faq-list">
               <p>
                 It's welcome for the host to bring something special to here like games, role play practice, etc. as long as it's in accordance with our current ways.<br>
-                However, if it's required to do something special which differs from our current ways, in order not to change casually by anyone including a host, please put it out and discuss first.<br>
-                <!-- If you come up with a good idea, you don't need wait until your turn of being a host, because you can <a href="#divChange" class="btn-link-inner scrollto">Make a change</a> from now. -->
+                However, if it's required to do something special which differs from our current ways, in order not to change casually by anyone including a host, please put it out and discuss first.
+                <!-- Also refers to <a href="#secHost" class="btn-link-inner scrollto">About being a host</a>. -->
+                <!-- If you come up with a good idea, you don't need wait until your turn of being a host, because you can <a href="#divChange" class="btn-link-inner scrollto">Make a change</a> from now. -->                
               </p>
             </div>
           </li>
@@ -1093,13 +1105,14 @@
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faqAbsentLong" class="collapsed a_outer">What if I need to be absent for several months? <i class="ion-android-remove"></i></a>
+            <a id="faqAbsentLongTitle" data-toggle="collapse" href="#faqAbsentLong" class="collapsed a_outer">What if I need to be absent for several months? <i class="ion-android-remove"></i></a>
             <div id="faqAbsentLong" class="collapse" data-parent="#faq-list">
               <p>
                 For members who joined less than one month or haven't been a host, we'll recommend to quit first and join again later when available. <a onclick="if (!$('#faqAbsentQuit').hasClass('collapse show')) {$('#faqAbsentQuitTitle').click()}" href="#faqAbsentQuitTitle" class="btn-link-inner scrollto">Why</a><br>
                 You can keep in touch with any member here you know, and let the member add you in again when you are available to attend regularly.<br>
                 For the remaining members, it's available to be absent for under 3 months. If over 3 months, it's the same as above.<br>
-                Furthermore, it's required to notify your absence with a specific time, otherwise it's hard to mark on the <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="btn-link-outer scrollto">Attend sheet</a>.
+                Furthermore, it's required to notify your absence with a specific time, otherwise it's hard to mark on the <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="btn-link-outer scrollto">Attend sheet</a>.<br>
+                Also refer to our <a href="#secReqAbsence" class="btn-link-inner scrollto">Basic requirements</a>.
               </p>
             </div>
           </li>
@@ -1134,7 +1147,7 @@
               <p>
                 Currently we do not separate into different tables before the gathering.<br>
                 During the gathering we'll separate into another table if there are over 7 members on a table.<br>
-                If it's estimated to have 2 or more tables beforehand, it's recommended to separate averagely while everyone's arriving.
+                If it's estimated to have 2 or more tables beforehand, it's recommended to separate averagely on everyone's arriving.
               </p>
             </div>
           </li>

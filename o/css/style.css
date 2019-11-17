@@ -874,7 +874,8 @@ h6 {
   /* background: #2d2b46; */
   background: #1bb1dc;  
   background-size: cover;
-  padding: 40px 0;
+  padding: 40px 0 25px 0;
+  margin: 0 0 0 0;
 }
 
 #secAck .cta-title {
@@ -963,11 +964,69 @@ h6 {
   color: #1bb1dc;
 }
 
+
+
+
+
+
+/* Recruit Section
+--------------------------------*/
+
+#secRecruit {
+  padding: 0 0 96px 0;
+}
+
+/* #secRecruit .btn-link-inner {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+  color: #fff;
+} */
+
+#secRecruit h2 {
+  color: #413e66;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#secRecruit .p {
+  margin: 0;
+}
+
+#secRecruit h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+
+#secRecruit .container ul {
+  /* list-style: none; */
+  padding: 0;
+}
+
+#secRecruit .container ul li {
+  padding-bottom: 2px;
+}
+
+#secRecruit .container ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+
+
 /* More Section
 --------------------------------*/
 
 #secMore {
-  padding: 10px 0 60px 0;
+  padding: 0 0 60px 0;
 }
 
 /* #secMore .btn-link-inner {
@@ -1014,9 +1073,6 @@ h6 {
   padding-right: 4px;
   color: #1bb1dc;
 }
-
-
-
 
 
 /* Portfolio Section
