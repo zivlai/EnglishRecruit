@@ -108,7 +108,7 @@
           <div style="display:inline-block; vertical-align:middle; padding-right:30px;">
             <a href="#secReq" class="btn-get-started scrollto">Get Started</a>                        
           </div>          
-          <div id="qrcode" style="display:inline-block; vertical-align:middle; width:100px; height:100px; margin-top:15px;"></div>
+          <div id="qrcode" style="display:inline-block; vertical-align:middle; width:100px; height:100px; margin-top:15px;" onclick= "($('.cssAudio').css('display') == 'none') ? $('.cssAudio').css('display', 'inline-block') : $('.cssAudio').css('display', 'none')"></div>
           <!-- text-align:right; -->
         </div>
   
@@ -130,7 +130,10 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Basic Requirements</h3>
+          <!-- <h3>Basic Requirements</h3>
+          <h4><audio style="width: 230px; height: 32px; display: inline-block; text-align: center;; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceReq.mp3" />Audio is not supported by your browser!</audio></h4> -->
+          <h3 onclick= "($('#audioReq').css('display') == 'none') ? $('#audioReq').css('display', 'inline-block') : $('#audioReq').css('display', 'none')">Basic Requirements</h3>
+          <h4><audio id="audioReq" class="cssAudio" controls="Controls" controlsList='nodownload'><source src="./audio/voiceReq.mp3" />Audio is not supported by your browser!</audio></h4>          
           <p>Everything here starts from our basic requirements.</p>
         </header>
 
@@ -140,7 +143,7 @@
             <div class="box">
               <div class="icon" style="background: #eafde7;"><i class="ion-android-contact" style="color:#41cf2e;"></i></div>
               <h4 class="title"><a href="">Be Host</a></h4>
-              <p class="description">By volunteer or taking turns.</p>
+              <p class="description">By volunteer or by turns.</p>
               <p class="description">Members can hold an official event instead of being a host.</p>
             </div>
           </div>
@@ -189,8 +192,11 @@
       <div class="container-fluid">
         
         <header class="section-header">
-          <h3>Gathering</h3>
-          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
+          <!-- <h3>Gathering</h3>
+          <h4><audio style="width: 230px; height: 32px; display: inline-block; text-align: center;; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceGathering.mp3" />Audio is not supported by your browser!</audio></h4> -->
+          <h3 onclick= "($('#audioGathering').css('display') == 'none') ? $('#audioGathering').css('display', 'inline-block') : $('#audioGathering').css('display', 'none')">Gathering</h3>
+          <h4><audio id="audioGathering" class="cssAudio" controls="Controls" controlsList='nodownload'><source src="./audio/voiceGathering.mp3" />Audio is not supported by your browser!</audio></h4>          
+          <p>Same time, same place, week after week.</p>
         </header>
 
         <div class="row">
@@ -266,8 +272,11 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Sections</h3>
-          <p>There are 2 regular sections and 1 optional section on our gathering.</p>
+          <!-- <h3>Sections</h3>
+          <h4><audio style="width: 230px; height: 32px; display: inline-block; text-align: center;; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceSection.mp3" />Audio is not supported by your browser!</audio></h4> -->
+          <h3 onclick= "($('#audioSection').css('display') == 'none') ? $('#audioSection').css('display', 'inline-block') : $('#audioSection').css('display', 'none')">Sections</h3>
+          <h4><audio id="audioSection" class="cssAudio" controls="Controls" controlsList='nodownload'><source src="./audio/voiceSection.mp3" />Audio is not supported by your browser!</audio></h4>
+          <p>There are 2 regular sections and 1 optional section at our gathering.</p>
         </header>
 
         <div class="row">
@@ -312,6 +321,29 @@
       </div>
     </section>
 
+
+    <!--==========================
+      Join Section
+    ============================-->
+    <section id="secJoin" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <!-- <h3 class="cta-title">Finish of Introduction <audio style="width: 230px; height: 32px; display: inline-block; text-align: center;; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceJoin.mp3" />Audio is not supported by your browser!</audio></h3> -->
+            <h3 class="cta-title" onclick= "($('#audioJoin').css('display') == 'none') ? $('#audioJoin').css('display', 'inline-block') : $('#audioJoin').css('display', 'none')" >Finish of Introduction <audio id='audioJoin' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceJoin.mp3" />Audio is not supported by your browser!</audio></h3>
+            <p class="cta-text">
+              Above is the Introduction before new members' join, specifically to our Basic Requirements<br>
+              Below is our Basic Orientation to let new members know how to be a Host and what to do for Recruitment.
+          </div>
+
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle scrollto" href="#secHost">Orientation</a>
+          </div>
+        </div>
+
+      </div>
+    </section>   
+
     <!--==========================
       About Us Section
     ============================-->
@@ -328,7 +360,9 @@
 
           <div class="col-lg-7 col-md-6">
             <div class="secHost-content">
-              <h2>About being a host</h2>
+              <!-- <h2>About being a host <audio style="width: 230px; height: 32px; display: inline-block; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceHost.mp3" />Audio is not supported by your browser!</audio></h2>               -->
+              <h2><p style = 'display: inline' onclick= "($('#audioHost').css('display') == 'none') ? $('#audioHost').css('display', 'inline-block') : $('#audioHost').css('display', 'none')" >About being a host </p><audio id='audioHost' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceHost.mp3" />Audio is not supported by your browser!</audio></h2>
+              <!-- <h2><p style = 'display: inline' onclick= "($('#audioHost').css('display') == 'none') ? $('#audioHost').css({'display':'inline-block', 'transition':'5s'}) : $('#audioHost').css({'display':'none', 'transition':'5s'})" >About being a host </p><audio id="audioHost" class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceHost.mp3" />Audio is not supported by your browser!</audio></h2> -->
               <!-- <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3> -->
               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
               <ul class="fa-ul">                                              
@@ -341,7 +375,7 @@
               <h3>Preferred:</h3>
               <ul class="fa-ul">
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Post weekly topics before Saturday night.</li>
-                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to explain special terms/nouns in short for some busy members. <a  onclick="if (!$('#faqHostArticle').hasClass('collapse show')) {$('#faqHostArticleTitle').click()}" href="#faqHostArticleTitle" class="btn-link-inner scrollto">Why</a></li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to explain special terms/nouns in short for some busy members. <a onclick="if (!$('#faqHostArticle').hasClass('collapse show')) {$('#faqHostArticleTitle').click()}" href="#faqHostArticleTitle" class="btn-link-inner scrollto">Why</a></li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Prevent Yes/No only questions: Also ask why/why not to prevent short answers.</li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Prevent issues causing uncomfortable feelings. <a onclick="if (!$('#faqHostFeeling').hasClass('collapse show')) {$('#faqHostFeelingTitle').click()}" href="#faqHostFeelingTitle" class="btn-link-inner scrollto">Why</a></li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to stay neutral to controversial, arguable, or sensitive issues. <a onclick="if (!$('#faqHostTopic').hasClass('collapse show')) {$('#faqHostTopicTitle').click()}" href="#faqHostTopicTitle" class="btn-link-inner scrollto">More</a></li>
@@ -367,7 +401,9 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h2>Special section</h2>
+            <!-- <h2>Special section</h2> -->
+            <!-- <h2>Special section <audio style="width: 230px; height: 32px; display: inline-block; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceSpecial.mp3" />Audio is not supported by your browser!</audio></h2> -->
+            <h2><p style = 'display: inline' onclick= "($('#audioSpecial').css('display') == 'none') ? $('#audioSpecial').css('display', 'inline-block') : $('#audioSpecial').css('display', 'none')" >Special section </p><audio id='audioSpecial' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceSpecial.mp3" />Audio is not supported by your browser!</audio></h2>          
             <p> Special section is a small section prepared by the weekly host for about 10-20 minutes, for special activities including sharing news/articles, playing games, having discussions, etc. Host can either prepare by himself/herself, or by cooperating with other members.<br>                
             </p>
             <!-- <ul> 
@@ -409,7 +445,8 @@
           </div>
 
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h2>Recruitment</h2>
+            <!-- <h2>Recruitment <audio style="width: 230px; height: 32px; display: inline-block; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceRecruit.mp3" />Audio is not supported by your browser!</audio></h2> -->
+            <h2><p style = 'display: inline' onclick= "($('#audioRecruit').css('display') == 'none') ? $('#audioRecruit').css('display', 'inline-block') : $('#audioRecruit').css('display', 'none')" >Recruitment </p><audio id='audioRecruit' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceRecruit.mp3" />Audio is not supported by your browser!</audio></h2>
             <p>
               Every member who has been a host can be a voter for recruitment.<br>
               Voters should consider if the applicant is good to here while voting.
@@ -455,10 +492,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Finish of Orientation</h3>
+            <!-- <h3 class="cta-title">Finish of Orientation <audio style="width: 230px; height: 32px; display: inline-block; text-align: center;; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceAck.mp3" />Audio is not supported by your browser!</audio></h3> -->
+            <h3 class="cta-title" onclick= "($('#audioAck').css('display') == 'none') ? $('#audioAck').css('display', 'inline-block') : $('#audioAck').css('display', 'none')" >Finish of Basic Orientation <audio id='audioAck' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceAck.mp3" />Audio is not supported by your browser!</audio></h3>
             <p class="cta-text"> 
-              You've finished our Basic Orientation. Now click the Confirm button, to let us know <a href="https://docs.google.com/spreadsheets/d/1nC1CXjtlOJ7WzDzJLufgSFKmFQcMm2sNO_5mKME2O_c/edit?usp=sharing" target="_blank" class="btn-link-outer scrollto">Your opinions</a> if you have.<br>
-              You can keep <a href="#secMore" class="div-btn-link-inner scrollto">Going down</a> to finish our Detailed Orientation then go back here to click the Confirm button, and choose to share our <a href="#divTasks" class="div-btn-link-inner scrollto">Background tasks</a> if you'd like.              
+              Above is our Basic Orientation. Please click the Confirm button, to let us know <a href="https://docs.google.com/spreadsheets/d/1nC1CXjtlOJ7WzDzJLufgSFKmFQcMm2sNO_5mKME2O_c/edit?usp=sharing" target="_blank" class="btn-link-outer scrollto">Your opinions</a>.<br>
+              To know more about here, you can keep going down to do our <a href="#secMore" class="div-btn-link-inner scrollto">Detailed Orientation</a>.
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc3fEaoZvszWSU7VrqcfIK7zXPOn0kdSIbRTdKCUlKDC7aHJA/viewform?usp=pp_url">Confirm</a>
@@ -525,11 +563,11 @@
                 <ul class="fa-ul">                
                   <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Attendance</li>
                   <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Maintain attend sheet, arrange next hosts, assist current host, and do orientation. Weekly, by taking turns.</li>
+                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Maintain attend sheet, arrange next hosts, assist current host, and do orientation. Weekly, by turns.</li>
                   </ul>                  
                   <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Recruitment</li>
                   <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Hold vote, refresh, contact with applicants, and introduce to applicants. Weekly, by taking turns.</li>
+                    <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Hold vote, refresh, contact with applicants, and introduce to applicants. Weekly, by turns.</li>
                   </ul>                  
                   <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Events</li>
                 </ul>
@@ -1312,6 +1350,7 @@
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Southern Taichung English Speaking Group</strong>. All Rights Reserved
+        <!-- &copy; Copyright <strong onclick= "($('.cssAudio').css('display') == 'none') ? $('.cssAudio').css('display', 'inline-block') : $('.cssAudio').css('display', 'none')">Southern Taichung English Speaking Group</strong>. All Rights Reserved -->
       </div>
       <div class="credits">
         Revised by Ziv using <a href="https://bootstrapmade.com/">BootstrapMade</a>
