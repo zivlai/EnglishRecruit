@@ -909,6 +909,8 @@ h6 {
   font-size: 28px;
   font-weight: 700;
   display: inline-block;
+  /* for audio */
+  /* margin-bottom: 0px; */
 }
 
 #secJoin .cta-text {
@@ -956,6 +958,8 @@ h6 {
   font-size: 28px;
   font-weight: 700;
   display: inline-block;
+  /* for audio */
+  margin-bottom: 0px;
 }
 
 #secAck .cta-text {
