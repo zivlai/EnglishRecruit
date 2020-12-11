@@ -175,7 +175,8 @@
               <p class="description">Use Attendance vote in Line group to notify. <a onclick="if (!$('#faqNotifyAbsence').hasClass('collapse show')) {$('#faqNotifyAbsenceTitle').click()}" href="#faqNotifyAbsenceTitle" class="div-btn-link-inner scrollto">Why</a> <a onclick="if (!$('#faqAbsentLong').hasClass('collapse show')) {$('#faqAbsentLongTitle').click()}" href="#faqAbsentLongTitle" class="div-btn-link-inner scrollto">Long Absence</a></p>
               <!-- <p class="description">Preferred time: Before Saturday 10PM. <a onclick="if (!$('#faqAbsentEmergent').hasClass('collapse show')) {$('#faqAbsentEmergentTitle').click()}" href="#faqAbsentEmergentTitle" class="div-btn-link-inner scrollto">More</a></p> -->
               <p class="description">Notify your absence before Saturday 10PM.</p>
-              <p class="description">Our attendance is recorded on <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="div-btn-link-outer scrollto">Attend sheet</a> <a href="#divAttend" class="div-btn-link-inner scrollto">How</a></p>
+              <p class="description">After Attendance vote, notify by sending Line group messages.</p>
+              <p class="description">Our Attendance is recorded on <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="div-btn-link-outer scrollto">Attend sheet</a> <a href="#divAttend" class="div-btn-link-inner scrollto">How</a></p>
             </div>
           </div>
 
@@ -326,11 +327,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <!-- <h3 class="cta-title">Finish of Introduction</h3> -->
-            <h3><p class="cta-title" onclick= "($('#audioJoin').css('display') == 'none') ? $('#audioJoin').css('display', 'inline-block') : $('#audioJoin').css('display', 'none')" >Finish of Introduction</p><audio id='audioJoin' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceJoin.mp3" />Audio is not supported by your browser!</audio></h3>
+            <h3 class="cta-title">Finish of Introduction</h3>
+            <!-- <h3><p class="cta-title" onclick= "($('#audioJoin').css('display') == 'none') ? $('#audioJoin').css('display', 'inline-block') : $('#audioJoin').css('display', 'none')" >Finish of Introduction</p><audio id='audioJoin' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceJoin.mp3" />Audio is not supported by your browser!</audio></h3> -->
             <p class="cta-text">
-              Above is the Introduction before new members' join, specifically to our Basic Requirements.<br>
-              Below is our Basic Orientation to let new members know how to be a Host and what to do for Recruitment.
+              Above sectons will be introduced before new members' join.<br>
+              And we will ask our <a href="#secReq" class="div-btn-link-inner scrollto">Basic Requirements</a> to every member, basically no exception.<br>              
+              Every new member needs to do our <a href="#secHost" class="div-btn-link-inner scrollto">Orientation</a> to know how to be a host and what to do for Recruitment.
           </div>
 
           <div class="col-lg-3 cta-btn-container text-center">
@@ -363,8 +365,8 @@
               <!-- <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3> -->
               <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
               <ul class="fa-ul">                                              
-                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Weekly topics contain a host topic, and optional picked special section topics.</li>
-                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Generally a host topic contains 1 main topic with 3 questions.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Weekly topics contain a host topic, and optional special section topics.</li>
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Generally a host topic contains 1 main topic with about 3 questions.</li>
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Special section can be on the 1st or 2nd hour, independent or combined.</li>
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Arrange and put the schedule in the end of the weekly topics.</li>                
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Post weekly topics on the Note of line group.</li>
@@ -372,7 +374,7 @@
               <h3>Preferred:</h3>
               <ul class="fa-ul">
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Post weekly topics before Saturday night.</li>
-                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to explain special terms/nouns in short for some busy members. <a onclick="if (!$('#faqHostArticle').hasClass('collapse show')) {$('#faqHostArticleTitle').click()}" href="#faqHostArticleTitle" class="btn-link-inner scrollto">Why</a></li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to briefly explain special terms/nouns for some busy members. <a onclick="if (!$('#faqHostArticle').hasClass('collapse show')) {$('#faqHostArticleTitle').click()}" href="#faqHostArticleTitle" class="btn-link-inner scrollto">Why</a></li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Prevent Yes/No only questions: Also ask why/why not to prevent short answers.</li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Prevent issues causing uncomfortable feelings. <a onclick="if (!$('#faqHostFeeling').hasClass('collapse show')) {$('#faqHostFeelingTitle').click()}" href="#faqHostFeelingTitle" class="btn-link-inner scrollto">Why</a></li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Try to stay neutral to controversial, arguable, or sensitive issues. <a onclick="if (!$('#faqHostTopic').hasClass('collapse show')) {$('#faqHostTopicTitle').click()}" href="#faqHostTopicTitle" class="btn-link-inner scrollto">More</a></li>
@@ -401,7 +403,7 @@
             <!-- <h2>Special section</h2> -->
             <!-- <h2>Special section <audio style="width: 230px; height: 32px; display: inline-block; vertical-align:middle" controls="Controls" controlsList='nodownload'><source src="./audio/voiceSpecial.mp3" />Audio is not supported by your browser!</audio></h2> -->
             <h2><p style = 'display: inline' onclick= "($('#audioSpecial').css('display') == 'none') ? $('#audioSpecial').css('display', 'inline-block') : $('#audioSpecial').css('display', 'none')" >Special section</p><audio id='audioSpecial' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceSpecial.mp3" />Audio is not supported by your browser!</audio></h2>          
-            <p> Special section is a small section prepared by the weekly host for about 10-20 minutes, for special activities including sharing news/articles, playing games, having discussions, etc. Host can either prepare by himself/herself, or by cooperating with other members.<br>                
+            <p> Special section is an optional and short section for about 10-20 minutes, for special activities including sharing news/articles, playing games, having discussions, etc. Host can either prepare by himself/herself, or by cooperating with other members.<br>                
             </p>
             <!-- <ul> 
               <li><i class="ion-android-checkmark-circle"></i>Proposer: any member</li>
@@ -409,7 +411,7 @@
             </ul>               -->
             <ul class="fa-ul">                
               <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If you are not the weekly host and you have some ideas for special section, please contact the weekly host.</li>
-              <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If you are the weekly host, there is no need to worry about not having a special section. If there is no special section, it just means nothing special.</li>
+              <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If you are the weekly host, don't worry there is no special section topics. If there is no special section, it just means nothing special.</li>
             </ul>
             <!-- <p>
              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt. 
@@ -446,7 +448,7 @@
             <h2><p style = 'display: inline' onclick= "($('#audioRecruit').css('display') == 'none') ? $('#audioRecruit').css('display', 'inline-block') : $('#audioRecruit').css('display', 'none')" >Recruitment</p><audio id='audioRecruit' class='cssAudio' controls="Controls" controlsList='nodownload'><source src="./audio/voiceRecruit.mp3" />Audio is not supported by your browser!</audio></h2>
             <p>
               Every member who has been a host can be a voter for recruitment.<br>
-              Voters should consider if the applicant is good to here while voting.
+              Voters should consider if the applicant is good to here to vote.
             </p>
             <p>
               <ul class="fa-ul">                
@@ -457,20 +459,20 @@
                 <!-- <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> After the deadline, the decision will be made if no further opinion.</li> -->
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> Vote by selecting <b>Approval (+) </b> or <b>Disapproval (-) </b> to applicants.</li>
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If selected nothing or both to an applicant, it means no opinion.</li>
-                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> After the deadline, recruiters will check and announce the result.</li>                    
+                <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> After the deadline, recruiters will check and announce the result.</li>
                 <!-- <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> If no further opinion, applicant whose [+] > [-] will be invited.</li> -->
                 <li><span class="fa-li"><i class="fa fa-angle-right"></i></span> The decision will be made if there's no further opinion.</li>
               </ul>
             </p> 
             <p>
-              If the result is approval, recruiters will invite the applicant to attend and be our guest. Here are some routine procedures:
+              If the result is approval, recruiters will invite the applicant to attend and be our guest. The routine procedures are:
             </p>
             <p>
               <ul class="fa-ul">                
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Do self-introduction. Members can do a simple self-introduction.</li>
                 <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Introduce our <a href="#secReq" class="btn-link-inner scrollto">Basic requirements</a> / <a href="#secGathering" class="btn-link-inner scrollto">Gathering</a> / <a href="#secSection" class="btn-link-inner scrollto">Sections</a>.</li>
-                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Let our guest think and decide whether to join or not. <a onclick="if (!$('#faqRecruitPush').hasClass('collapse show')) {$('#faqRecruitPushTitle').click()}" href="#faqRecruitPushTitle" class="btn-link-inner scrollto">More</a></li>
-                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> The guest can attend more times to have a clear mind to join.</li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> Let our applicants think and decide whether to join or not. <a onclick="if (!$('#faqRecruitPush').hasClass('collapse show')) {$('#faqRecruitPushTitle').click()}" href="#faqRecruitPushTitle" class="btn-link-inner scrollto">More</a></li>
+                <li><span class="fa-li"><i class="fa fa-caret-right"></i></span> The applicants can attend more times to have a clear mind to join.</li>
               </ul>
             </p> 
             <!-- <p>
@@ -1151,9 +1153,8 @@
             <div id="faqAbsentLong" class="collapse" data-parent="#faq-list">
               <p>
                 For members who joined less than one month or haven't been a host, we'll recommend to quit first and join again later when available. <a onclick="if (!$('#faqAbsentQuit').hasClass('collapse show')) {$('#faqAbsentQuitTitle').click()}" href="#faqAbsentQuitTitle" class="btn-link-inner scrollto">Why</a><br>
-                You can keep in touch with any member here you know, and let the member add you in again when you are available to attend regularly.<br>
+                You can keep in touch with any member here you know, and let the member add you in Line group again when you are available to attend regularly.<br>
                 For the remaining members, it's available to be absent for under 3 months. If over 3 months, it's the same as above.<br>
-                Furthermore, it's required to notify your absence with a specific time, otherwise it's hard to mark on the <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="btn-link-outer scrollto">Attend sheet</a>.<br>
                 Also refer to our <a href="#secReqAbsence" class="btn-link-inner scrollto">Basic requirements</a>.
               </p>
             </div>
@@ -1206,14 +1207,13 @@
           </li>
 
           <li>
-            <a id="faqNotifyAbsenceTitle" data-toggle="collapse" href="#faqNotifyAbsence" class="collapsed a_outer">Why do we ask members to notify their absence, and why a specific time is required?<i class="ion-android-remove"></i></a>
+            <a id="faqNotifyAbsenceTitle" data-toggle="collapse" href="#faqNotifyAbsence" class="collapsed a_outer">Why do we ask members to notify their absence?<i class="ion-android-remove"></i></a>
             <div id="faqNotifyAbsence" class="collapse" data-parent="#faq-list">
               <p>
-                From our past experience, if members think they can be absent without saying anything, they might just be absent and remain slient forever.<br>
-                On giving a specific time, one reason is to be able to mark on the <a href="https://docs.google.com/spreadsheets/d/1Sn06lQVh1ewfK3UwRmFYdu2llEnk9MUJ29J8izzsYbg/edit#gid=211710257" target="_blank" class="btn-link-outer scrollto">Attend sheet</a>, and another reason is to let the members know they need to attend again on the given specific time.<br>
+                From our past experience, if members can be absent without notice or doing anything, they might just be absent and remain slient forever.<br>
                 We hardly have an example for a member who was absent without notice for a long time, then one day appeared and stayed with us again.<br>
-                The reason is the more they absent, the more they feel like they are outsiders to here, and consequently the more they feel reluctant to come.<br>
-                Sometimes it's the only slight connection for members who are busy or unavailable to attend for a while, to attend again on the off chance.<br>                
+                The reason is the more they absent, the more they feel like they are outsiders, and consequently the more they feel reluctant to come.<br>
+                Sometimes it's the very slight connection for members who are busy or unavailable to attend for a while, to attend again on the off chance.<br>                
                 Moreover, it's preferred to notify our absence before Saturday 10PM, to be able to know whether to skip our gathering tomorrow if equal or less than 4 attendees. Also refer to our <a href="#secReqAbsence" class="btn-link-inner scrollto">Basic requirements</a>.
               </p>
             </div>
